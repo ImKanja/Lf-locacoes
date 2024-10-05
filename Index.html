@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LF Soluções em Movimentação de Cargas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo-esquerda">
+            <img src="logo.png" alt="Logo da LF">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociais">
+            <a href="#"><img src="img/Facebook_logo.png" alt="Facebook"></a>
+            <a href="#"><img src="img/Instagram_logo.png" alt="Instagram"></a>
+            <a href="https://wa.me/558191447846?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!" target="_blank"><img src="img/whatsapp_logo.png" alt="WhatsApp"></a>
+        </div>
+    </header>
+
+    <!-- Seção de introdução -->
+    <section class="introducao">
+        <div class="texto-introducao">
+            <h1>Bem-vindo à LF!</h1>
+            <p>Fundada em 2013, a LF Locações e Serviços celebra 10 anos de excelência, oferecendo soluções inovadoras para a movimentação de cargas.
+            </p>
+        </div>
+
+        <!-- Contatos logo abaixo do texto -->
+        <div class="contatos-logo">
+            <a href="https://wa.me/558191447846?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!" target="_blank"><img src="img/whatsapp_logo.png" alt="WhatsApp"></a>
+            <a href="mailto:email@empresa.com"><img src="img/email_logo.png" alt="Email"></a>
+        </div>
+
+        <!-- Carrossel de Imagens -->
+        <div class="carrossel">
+            <div class="slides">
+                <img src="img/1.jpeg" alt="Imagem 1">
+                <img src="img/2.jpeg" alt="Imagem 2">
+                <img src="img/3.jpeg" alt="Imagem 3">
+            </div>
+    </section>
+
+    <!-- Seção sobre a empresa -->
+    <section id="sobre" class="sobre-nos">
+        <div class="info-empresa">
+            <div class="texto">
+                <h2>Nossa História</h2>
+                <p>Fundada em 2013, a LF celebra 10 anos fornecendo soluções inovadoras para movimentação de cargas. Começamos com locação de empilhadeiras e, ao longo da última década, expandimos para oferecer uma ampla gama de equipamentos.</p>
+            </div>
+            <div class="imagem">
+                <img src="img/1.jpeg" alt="">
+            </div>
+        </div>
+        <div class="info-empresa">
+            <div class="imagem">
+                <img src="img/3.jpeg" alt="Imagem 3">
+            </div>
+            <div class="texto">
+                <h2>Nossos Equipamentos</h2>
+                <p>Hoje, além das empilhadeiras, oferecemos pá mecânicas, incluindo modelos com vassoura recolhedora para limpeza industrial, além de equipamentos portuários especializados para operações de grande porte.</p>
+            </div>
+        </div>
+
+        <div class="info-empresa">
+            <div class="texto">
+                <h2>Compromisso com Qualidade</h2>
+                <p>Em 10 anos, mantivemos o compromisso de excelência, garantindo soluções ágeis e eficazes para nossos clientes, sempre aprimorando nossos serviços.</p>
+            </div>
+            <div class="imagem">
+                <img src="img/2.jpeg" alt="Imagem 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Clientes -->
+    <section id="clientes" class="clientes">
+        <h2>Nossos Clientes</h2>
+        <div class="clientes-imagens">
+            <img src="img/sua-graneis-logo.jpeg" alt="Cliente 1">
+            <img src="img/sua-graneis-logo.jpeg" alt="Cliente 2">
+            <img src="img/sua-graneis-logo.jpeg" alt="Cliente 3">
+            <img src="img/sua-graneis-logo.jpeg" alt="Cliente 4">
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato">
+        <div class="cta-phone">
+            <p>Tel: 81 9.1447846</p>
+        </div>
+        
+        <div class="cta-email">
+            <a href="mailto:email@empresa.com">
+                <img src="img/email_logo.png" alt="Email">
+                <span>Entre em contato por e-mail</span>
+            </a>
+        </div>
+
+        <div class="cta-wpp">
+            <a href="https://wa.me/558191447846?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!" target="_blank">
+                <img src="img/whatsapp_logo.png" alt="WhatsApp">
+                <span>Clique aqui para falar conosco pelo WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("slides")[0].children;
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Muda a imagem a cada 2 segundos
+        }
+
+        function plusSlides(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    </script>
+
+</body>
+
+<!-- Rodapé -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contato">
+            <h3>Contato</h3>
+            <p>Tel: 81 9.1447846</p>
+            <p>Email: <a href="mailto:email@empresa.com">email@empresa.com</a></p>
+        </div>
+
+        <div class="footer-redes-sociais">
+            <h3>Siga-nos</h3>
+            <a href="#"><img src="img/Facebook_logo.png" alt="Facebook"></a>
+            <a href="#"><img src="img/Instagram_logo.png" alt="Instagram"></a>
+            <a href="https://wa.me/558191447846?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!" target="_blank"><img src="img/whatsapp_logo.png" alt="WhatsApp"></a>
+        </div>
+    </div>
+
+    <div class="footer-direitos">
+        <p>&copy; 2024 LF Soluções em Movimentação de Cargas. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</html>
