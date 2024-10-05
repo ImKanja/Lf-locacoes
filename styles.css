@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo-esquerda img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.redes-sociais a img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.introducao {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.texto-introducao {
+    width: 50%;
+}
+
+.texto-introducao h1 {
+    font-size: 36px;
+}
+
+.carrossel {
+    width: 45%;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+}
+
+.contatos-logo {
+    margin-top: 10px;
+}
+
+.contatos-logo a img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.sobre-nos {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.info-empresa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.info-empresa .texto {
+    width: 45%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.info-empresa .imagem {
+    width: 25%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+.info-empresa .imagem img {
+    width: 100%;
+    height: auto;
+}
+
+.clientes {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.clientes-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.clientes-imagens img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.contato {
+    padding: 50px 20px;
+    background-color: #949494;
+    text-align: center;
+}
+
+.cta-wpp {
+    margin-bottom: 20px;
+}
+
+.cta-wpp a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.cta-wpp a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.formulario-e-imagem {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 50%;
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.imagem-formulario {
+    width: 45%;
+}
+
+.imagem-formulario img {
+    width: 100%;
+    height: auto;
+}
+
+/* Seção de Carrossel */
+.carrossel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 80%;
+    display: none; /* Oculta todas as imagens inicialmente */
+}
+
+.slides img:first-child {
+    display: block; /* Mostra a primeira imagem inicialmente */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.cta-phone p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.cta-email, .cta-wpp {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.cta-email img, .cta-wpp img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.cta-email a, .cta-wpp a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links ul, .footer-contato, .footer-redes-sociais {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links h3, .footer-contato h3, .footer-redes-sociais h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-links a, .footer-contato a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover, .footer-contato a:hover {
+    text-decoration: underline;
+}
+
+.footer-redes-sociais a img {
+    width: 25px;
+    margin: 0 10px;
+    filter: invert(1);
+}
+
+.footer-direitos {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
