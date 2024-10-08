@@ -43,12 +43,12 @@ nav ul li a {
 .introducao {
     display: flex;
     justify-content: space-between;
-    padding: 100px 10px;
-    padding-left: 152px;
+    padding: 260px 47px;
+    padding-left: 154px;
     background-image: url(img/fundo.jfif);
-    background-size: 222vh 75vw;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 0rem 27%;
     opacity: 0.9;
     background-color: #f4f4f4;
 }
@@ -64,8 +64,8 @@ nav ul li a {
 }
 
 .carrossel {
-    width: 45%;
-    padding-left: 5rem;
+    width: 55%;
+    padding-left: 2rem;
 }
 
 .carrossel img {
@@ -126,10 +126,8 @@ nav ul li a {
 }
 
 .clientes-imagens img {
-    width: 150px;
-    width: 100rem;
-    height: 10rem;
-    height: auto;
+    width: 24rem;
+    height: 9rem;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -332,164 +330,78 @@ footer {
     box-sizing: border-box;
 }
 
-/* Para dispositivos menores que 768px (tablets e celulares) */
+/* Media query para telas menores (máximo 768px de largura, típico para celulares) */
 @media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo-esquerda img {
+        height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .introducao {
         flex-direction: column;
-        padding: 50px 10px; /* Ajuste o padding */
-        text-align: center; /* Centraliza o texto */
+        padding: 50px 20px;
+        background-size: cover;
+        background-position: center;
     }
 
     .texto-introducao {
-        width: 100%; /* Usa a largura total */
-        padding-right: 80px; /* Remove o padding */
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .contatos-logo{
+        padding-left: 11rem;
     }
 
     .carrossel {
-        width: 100%; /* Usa a largura total */
+        width: 100%;
+        padding-left: 5rem;
     }
 
     .info-empresa {
-        flex-direction: column; /* Coloca os elementos em coluna */
-        align-items: center; /* Centraliza os itens */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .info-empresa .texto, .info-empresa .imagem {
-        width: 100%; /* Usa a largura total */
-        margin: 0; /* Remove margens */
+    .info-empresa .texto, 
+    .info-empresa .imagem {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .clientes-imagens {
-        flex-wrap: wrap; /* Permite que as imagens se movam para a próxima linha */
-        justify-content: center; /* Centraliza as imagens */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .clientes-imagens img {
-        width: 100px; /* Ajuste a largura para telas menores */
-        width: 23rem;
-        height: 10rem;
+        width: 100%;
+        height: auto;
     }
 
-    .contato {
-        padding: 30px 10px; /* Ajuste o padding */
+    .formulario-e-imagem {
+        flex-direction: column;
     }
 
-    footer {
-        flex-direction: column; /* Coloca os elementos em coluna */
-        align-items: center; /* Centraliza os itens */
+    form, .imagem-formulario {
+        width: 100%;
     }
 
-    .footer-container {
-        flex-direction: column; /* Coloca os elementos em coluna */
-        align-items: center; /* Centraliza os itens */
-    }
-}
-
-/* Para dispositivos menores que 480px (celulares) */
-@media (max-width: 480px) {
-    nav ul {
-        flex-direction: column; /* Muda a direção dos links para coluna */
-        align-items: center; /* Centraliza os links */
-    }
-
-    nav ul li {
-        margin: 5px 0; /* Adiciona espaço entre os links */
-    }
-
-    .cta-phone p, .cta-email a, .cta-wpp a {
-        font-size: 14px; /* Reduz o tamanho da fonte */
-    }
-
-    .clientes-imagens img {
-        width: 80px; /* Ajuste a largura para telas muito pequenas */
-        width: 100rem;
-        height: 10rem;
-    }
-}
-
-/* Para dispositivos maiores que 1200px (desktop grandes) */
-@media (min-width: 1200px) {
-    .introducao {
-        padding: 120px 10px;
-        padding-left: 152px; 
-        background-size: cover;
-        background-position: center 80rem;/* Aumenta o padding para maior espaçamento */
-    }
-
-    .texto-introducao h1 {
-        font-size: 48px; /* Aumenta o tamanho do título */
-    }
-
-    .carrossel {
-        width: 50%; /* Define uma largura maior para o carrossel */
-    }
-
-    .info-empresa {
-        margin-bottom: 50px; /* Adiciona espaço entre as seções */
-    }
-
-    .info-empresa .texto {
-        width: 40%; /* Ajusta a largura do texto */
-    }
-
-    .info-empresa .imagem {
-        width: 35%; /* Ajusta a largura da imagem */
-    }
-
-    .clientes-imagens img {
-        width: 200px; /* Aumenta a largura das imagens dos clientes */
-        width: 100rem;
-        height: 10rem;
-    }
-
-    .contato {
-        padding: 70px 20px; /* Aumenta o padding */
-    }
-
-    footer {
-        flex-direction: row; /* Mantém o layout em linha */
-    }
-
-    .footer-container {
-        flex-direction: row; /* Mantém o layout em linha */
-    }
-
-    .footer-links ul,
-    .footer-contato,
-    .footer-redes-sociais {
-        margin: 0 20px; /* Adiciona margens para espaçamento */
-    }
-}
-
-/* Para dispositivos maiores que 992px (desktop médio) */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .introducao {
-        padding: 120px 10px;
-        padding-left: 152px; 
-        background-size: cover;
-        background-size: 222vh 75vw;
-        background-position: center;  /* Ajusta o padding para telas médias */
-    }
-
-    .texto-introducao h1 {
-        font-size: 42px; /* Tamanho do título em telas médias */
-    }
-
-    .carrossel {
-        width: 60%; /* Ajusta a largura do carrossel */
-    }
-
-    .info-empresa .texto {
-        width: 45%; /* Ajusta a largura do texto */
-    }
-
-    .info-empresa .imagem {
-        width: 30%; /* Ajusta a largura da imagem */
-    }
-
-    .clientes-imagens img {
-        width: 150px; /* Ajusta a largura das imagens dos clientes */
-        width: 100rem;
-        height: 10rem;
+    footer .footer-container {
+        flex-direction: column;
+        text-align: center;
     }
 }
