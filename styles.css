@@ -83,8 +83,15 @@ nav ul li a {
 }
 
 .sobre-nos {
-    padding: 50px 20px;
-    background-color: #fff;
+    padding: 30rem 5px;
+    background-image: url("img/2-fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo com transparência */
+    background-blend-mode: multiply; /* Faz a mistura do fundo com a transparência */
+
+    /* background-color: #fff; */
 }
 
 .info-empresa {
@@ -98,6 +105,7 @@ nav ul li a {
     width: 45%;
     margin-left: 10%;
     margin-right: 10%;
+    color: #fff;
 
 }
 
