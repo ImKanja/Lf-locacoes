@@ -20,6 +20,7 @@ header {
 
 .logo-esquerda img {
     height: 50px;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -42,12 +43,20 @@ nav ul li a {
 .introducao {
     display: flex;
     justify-content: space-between;
-    padding: 50px 20px;
+    padding: 100px 10px;
+    padding-left: 152px;
+    background-image: url(img/fundo.jfif);
+    background-size: 222vh 75vw;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
     background-color: #f4f4f4;
 }
 
 .texto-introducao {
     width: 50%;
+    color: #f9f9f9;
+    padding-right: 80px;
 }
 
 .texto-introducao h1 {
@@ -56,6 +65,7 @@ nav ul li a {
 
 .carrossel {
     width: 45%;
+    padding-left: 5rem;
 }
 
 .carrossel img {
@@ -117,6 +127,8 @@ nav ul li a {
 
 .clientes-imagens img {
     width: 150px;
+    width: 100rem;
+    height: 10rem;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
@@ -311,4 +323,173 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #444;
     margin-top: 20px;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Para dispositivos menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .introducao {
+        flex-direction: column;
+        padding: 50px 10px; /* Ajuste o padding */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .texto-introducao {
+        width: 100%; /* Usa a largura total */
+        padding-right: 80px; /* Remove o padding */
+    }
+
+    .carrossel {
+        width: 100%; /* Usa a largura total */
+    }
+
+    .info-empresa {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .info-empresa .texto, .info-empresa .imagem {
+        width: 100%; /* Usa a largura total */
+        margin: 0; /* Remove margens */
+    }
+
+    .clientes-imagens {
+        flex-wrap: wrap; /* Permite que as imagens se movam para a próxima linha */
+        justify-content: center; /* Centraliza as imagens */
+    }
+
+    .clientes-imagens img {
+        width: 100px; /* Ajuste a largura para telas menores */
+        width: 23rem;
+        height: 10rem;
+    }
+
+    .contato {
+        padding: 30px 10px; /* Ajuste o padding */
+    }
+
+    footer {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+}
+
+/* Para dispositivos menores que 480px (celulares) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Muda a direção dos links para coluna */
+        align-items: center; /* Centraliza os links */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adiciona espaço entre os links */
+    }
+
+    .cta-phone p, .cta-email a, .cta-wpp a {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .clientes-imagens img {
+        width: 80px; /* Ajuste a largura para telas muito pequenas */
+        width: 100rem;
+        height: 10rem;
+    }
+}
+
+/* Para dispositivos maiores que 1200px (desktop grandes) */
+@media (min-width: 1200px) {
+    .introducao {
+        padding: 120px 10px;
+        padding-left: 152px; 
+        background-size: cover;
+        background-position: center 80rem;/* Aumenta o padding para maior espaçamento */
+    }
+
+    .texto-introducao h1 {
+        font-size: 48px; /* Aumenta o tamanho do título */
+    }
+
+    .carrossel {
+        width: 50%; /* Define uma largura maior para o carrossel */
+    }
+
+    .info-empresa {
+        margin-bottom: 50px; /* Adiciona espaço entre as seções */
+    }
+
+    .info-empresa .texto {
+        width: 40%; /* Ajusta a largura do texto */
+    }
+
+    .info-empresa .imagem {
+        width: 35%; /* Ajusta a largura da imagem */
+    }
+
+    .clientes-imagens img {
+        width: 200px; /* Aumenta a largura das imagens dos clientes */
+        width: 100rem;
+        height: 10rem;
+    }
+
+    .contato {
+        padding: 70px 20px; /* Aumenta o padding */
+    }
+
+    footer {
+        flex-direction: row; /* Mantém o layout em linha */
+    }
+
+    .footer-container {
+        flex-direction: row; /* Mantém o layout em linha */
+    }
+
+    .footer-links ul,
+    .footer-contato,
+    .footer-redes-sociais {
+        margin: 0 20px; /* Adiciona margens para espaçamento */
+    }
+}
+
+/* Para dispositivos maiores que 992px (desktop médio) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .introducao {
+        padding: 120px 10px;
+        padding-left: 152px; 
+        background-size: cover;
+        background-size: 222vh 75vw;
+        background-position: center;  /* Ajusta o padding para telas médias */
+    }
+
+    .texto-introducao h1 {
+        font-size: 42px; /* Tamanho do título em telas médias */
+    }
+
+    .carrossel {
+        width: 60%; /* Ajusta a largura do carrossel */
+    }
+
+    .info-empresa .texto {
+        width: 45%; /* Ajusta a largura do texto */
+    }
+
+    .info-empresa .imagem {
+        width: 30%; /* Ajusta a largura da imagem */
+    }
+
+    .clientes-imagens img {
+        width: 150px; /* Ajusta a largura das imagens dos clientes */
+        width: 100rem;
+        height: 10rem;
+    }
 }
