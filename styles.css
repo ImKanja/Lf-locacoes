@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -85,55 +86,57 @@ nav ul li a {
 }
 
 .sobre-nos {
-    padding-top: 5%;
+    padding-top: 7%;
+    padding-left: 13%;
+    padding-right: 77px;
     padding-bottom: 2.5%;
+    height: 54rem;
     background-image: url("img/2-fundo.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo com transparência */
-    background-blend-mode: multiply; /* Faz a mistura do fundo com a transparência */
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: multiply;
     /* background-color: #fff; */
 
-    display: flex;
-    flex-direction: row-reverse;
-
 }
 
+.fundo{
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    height: 46rem;
+    border-radius: 2%;
+    border: solid rgb(32, 30, 30);
+}
 
 .info-empresa {
-    /* display: flex;
-    justify-content: space-between; */
-    align-items: center;
-    margin-bottom: 25px;
-    width: 1000rem;
+    margin-left: 6%;
 }
+
 
 .info-empresa .texto {
-    width: 45%;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 10px;
     color: #fff;
+    width: 28vw;
 
-}
-
-.imagem {
-    width: 40%;
-    height: auto;
-    margin-right: 10%;
-    margin-left: 10%;
 }
 
 .imagem img {
-    width: 100%;
-    height: auto;
+    height: 38vh;
+    width: 25rem;
 }
 
-.introducao-empresa{
+.imagem-empresa{ 
     color: #fff;
-    padding-left: 21%;
-    font-size: 20px
+    padding-right: 30rem;
+    height: 60vh;
+    width: 45%;
 
 }
+
 
 .clientes {
     text-align: center;
@@ -347,15 +350,9 @@ footer {
     margin-top: 20px;
 }
 
-/* Estilos gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Media query para telas menores (máximo 768px de largura, típico para celulares) */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
 
     header {
         flex-direction: column;
@@ -377,6 +374,24 @@ footer {
         padding: 50px 20px;
         background-size: cover;
         background-position: center;
+    }
+
+    .fundo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem img {
+        height: 38vh;
+        width: 25rem;
+    }
+    
+    .imagem-empresa{ 
+        color: #fff;
+        padding-right: 30rem;
+        height: 60vh;
+        width: 45%;
+    
     }
 
     .texto-introducao {
