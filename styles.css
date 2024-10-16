@@ -135,7 +135,7 @@ nav ul li a {
 }
 
 .imagem img {
-    height: 38vh;
+    height: 36vh;
     width: 25rem;
 }
 
@@ -362,73 +362,138 @@ footer {
 
 
 /* Media query para telas menores (máximo 768px de largura, típico para celulares) */
-@media (max-width: 360px) {
+/* 
+@media (max-width: 768px) {
 
-    header {
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-    }
+        header{
+            width: 26rem;
+        }
+
+        .introducao{
+            border: solid red;
+            width: 26rem;
+            padding-top: 0%;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .introducao .texto-introducao{
+            border: solid red;
+            height: 30vh;
+            margin-right: 50%;
+            text-align: center
+            
+            
+        }
+
+        .introducao .texto-introducao p{
+            width: 97%;
+        }
+
+        .introducao .contatos-logo{
+            margin-right: 56%;
+
+        }
+
+        .introducao .carrossel{
+            border: solid rebeccapurple;
+            width: 40vw;
+            height: 33vh;
+            margin-right: 54%;
+        }
+
+        .introducao .carrossel .slides{
+
+        }
+
+        .introducao .carrossel .slides img{
+            width: 100%;
+            height: 34vh;
+        }
+} 
+*/
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    
 
     .logo-esquerda img {
         height: 40px;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+    
+
+    .redes-sociais {
+        margin-top: 10px;
     }
 
     .introducao {
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 20px;
         background-size: cover;
-        background-position: center;
-    }
-
-    .fundo{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imagem img {
-        height: 38vh;
-        width: 25rem;
-    }
-    
-    .imagem-empresa{ 
-        color: #fff;
-        padding-right: 30rem;
-        height: 60vh;
-        width: 45%;
-    
     }
 
     .texto-introducao {
         width: 100%;
-        padding-right: 0;
+        padding: 0;
         text-align: center;
     }
 
-    .contatos-logo{
-        padding-left: 11rem;
+    .texto-introducao h1{
+        width: 93vw;
     }
 
     .carrossel {
         width: 100%;
-        padding-left: 5rem;
+        padding-left: 65px;
     }
 
-    .info-empresa {
+    .carrossel .slides img {
+        margin-left: 28px;
+
+    }
+
+    .contatos-logo{
+        margin-left: 18rem;
+
+    }
+
+    .contatos-logo {
+        justify-content: center;
+    }
+
+    .sobre-nos {
         flex-direction: column;
-        align-items: flex-start;
+        padding: 20px;
+        height: auto;
     }
 
-    .info-empresa .texto, 
-    .info-empresa .imagem {
+    .fundo {
+        flex-direction: column;
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        height: 208vh;
+        padding: 20px;
+    }
+
+    .info-empresa .texto {
+        width: 100%;
+    }
+
+    .info-empresa .texto p {
+        padding: 10px;
+        width: 82vw;
+    }
+
+    .imagem-empresa {
+        width: 100%;
+        height: 40rem;
+        margin-left: 114px;
+    }
+
+    .imagem-empresa .imagem img{
+        height: 38vh;
+        width: 25rem;
     }
 
     .clientes-imagens {
@@ -437,20 +502,34 @@ footer {
     }
 
     .clientes-imagens img {
-        width: 100%;
+        width: 90%;
         height: auto;
+    }
+
+    .contato {
+        padding: 20px;
+        text-align: center;
     }
 
     .formulario-e-imagem {
         flex-direction: column;
     }
 
-    form, .imagem-formulario {
+    form {
+        width: 100%;
+    }
+
+    .imagem-formulario {
         width: 100%;
     }
 
     footer .footer-container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
+    }
+
+    .footer-links, .footer-contato, .footer-redes-sociais {
+        margin-bottom: 20px;
     }
 }
