@@ -105,7 +105,7 @@ nav ul li a {
     flex-direction: row;
     justify-content: space-between;
     width: 95%;
-    height: 47rem;
+    height: 48rem;
     border-radius: 2%;
     border: solid rgb(32, 30, 30);
 }
@@ -129,6 +129,7 @@ nav ul li a {
 }
 
 .imagem img {
+    padding-top: 15px;
     height: 36vh;
     width: 25rem;
 }
