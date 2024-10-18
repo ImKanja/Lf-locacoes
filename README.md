@@ -34,7 +34,7 @@ O site apresenta informações sobre a história da empresa, os equipamentos ofe
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/ImKanja/Lf-locacoes
    ```
 
 2. Abra o arquivo `index.html` no navegador.
@@ -46,7 +46,7 @@ O site apresenta informações sobre a história da empresa, os equipamentos ofe
 Caso tenha alguma dúvida ou queira sugerir melhorias, entre em contato conosco:
 
 - WhatsApp: [Clique aqui para conversar via WhatsApp](https://wa.me/558191447846?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!)
-- E-mail: [email@empresa.com](mailto:email@empresa.com)
+- E-mail: [lflocservi@gmail.com.com](mailto:lflocservi@gmail.com.com)
 
 ---
 
