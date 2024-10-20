@@ -48,7 +48,7 @@ nav ul li a {
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 154px;
-    background-image: url(img/fundo.jfif);
+    background-image: url(https://raw.githubusercontent.com/ImKanja/Lf-locacoes/refs/heads/main/img/fundo.jfif?token=GHSAT0AAAAAACYMCB6UPJX46K3YLLPDY4LAZYU563Q);
     background-size: auto;
     background-position: 0rem 27%;
     opacity: 0.9;
@@ -92,7 +92,7 @@ nav ul li a {
     padding-right: 77px;
     padding-bottom: 2.5%;
     height: 54rem;
-    background-image: url("img/2-fundo.jpeg");
+    background-image: url(https://raw.githubusercontent.com/ImKanja/Lf-locacoes/refs/heads/main/img/2-fundo.jpeg?token=GHSAT0AAAAAACYMCB6VK6ZOOOWNALSJKLFOZYU5YAQ);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5); 
@@ -164,7 +164,7 @@ nav ul li a {
     padding: 50px 20px;
     background-color: #949494;
     text-align: center;
-    background-image: url("img/line.png");
+    background-image: url("https://raw.githubusercontent.com/ImKanja/Lf-locacoes/refs/heads/main/img/line.png");
 }
 
 .cta-wpp {
